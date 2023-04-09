@@ -1,0 +1,17 @@
+# Deno cache
+/.deno_cache/
+
+# Compiled files
+/**/*.js
+/**/*.tsbuildinfo
+
+# Test coverage reports
+/coverage/
+
+# IDE and editor files
+/.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
