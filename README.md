@@ -1,3 +1,5 @@
+![chronos](https://raw.githubusercontent.com/sust4in/chronos/master/chronos.png)
+
 ## Chronos - Task Scheduler
 
 Chronos is a simple task scheduler library for Deno that allows you to schedule
