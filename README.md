@@ -14,7 +14,7 @@ import {
   createTask,
   IntervalScheduler,
   Task,
-} from "https://path.to/chronos/src/mod.ts";
+} from "https://deno.land/x/chronos@v0.1.0/src/mod.ts";
 
 // Define a task action
 const taskAction = async () => {
