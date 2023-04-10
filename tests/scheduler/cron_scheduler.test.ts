@@ -1,4 +1,7 @@
-import { assertEquals, assertThrows } from "https://deno.land/std@0.182.0/testing/asserts.ts";
+import {
+  assertEquals,
+  assertThrows,
+} from "https://deno.land/std@0.182.0/testing/asserts.ts";
 import { CronScheduler } from "../../src/scheduler/cron_scheduler.ts";
 import { Task } from "../../src/models/task.ts";
 
@@ -24,7 +27,7 @@ Deno.test("CronScheduler: should throw an error for an invalid due time", () => 
       scheduler.schedule(task);
     },
     Error,
-    "Task due time should be in the future"
+    "Task due time should be in the future",
   );
 });
 

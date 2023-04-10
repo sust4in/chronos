@@ -1,12 +1,18 @@
 ## Chronos - Task Scheduler
-Chronos is a simple task scheduler library for Deno that allows you to schedule and run tasks at specific intervals or times.
+
+Chronos is a simple task scheduler library for Deno that allows you to schedule
+and run tasks at specific intervals or times.
 
 ## Usage
 
 Here's an example of how to use the Chronos Task Scheduler:
 
 ```typescript
-import { Task, createTask, IntervalScheduler } from "https://path.to/chronos/src/mod.ts";
+import {
+  createTask,
+  IntervalScheduler,
+  Task,
+} from "https://path.to/chronos/src/mod.ts";
 
 // Define a task action
 const taskAction = async () => {
@@ -25,3 +31,4 @@ scheduler.schedule(task);
 
 // You can unschedule the task if necessary
 scheduler.unschedule(task.id);
+```

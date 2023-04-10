@@ -36,17 +36,21 @@ class TestScheduler extends Scheduler {
 }
 
 Deno.test("Scheduler: should create a new scheduler instance", () => {
-    const scheduler = new TestScheduler();
-  
-    assertEquals(scheduler instanceof TestScheduler, true, "Scheduler instance should be created");
+  const scheduler = new TestScheduler();
+
+  assertEquals(
+    scheduler instanceof TestScheduler,
+    true,
+    "Scheduler instance should be created",
+  );
 });
 
 Deno.test("Scheduler should run a task", async () => {
-    const scheduler = new CronScheduler();
-    const task = new Task("test", "test", () => {
-      console.log("Task executed");
-    }, new Date(Date.now() + 1000));
-    scheduler.addTask(task);
-    await delay(1500);
-    assertEquals(scheduler.getTaskQueue().getTasks().length, 1);
+  const scheduler = new CronScheduler();
+  const task = new Task("test", "test", () => {
+    console.log("Task executed");
+  }, new Date(Date.now() + 1000));
+  scheduler.addTask(task);
+  await delay(1500);
+  assertEquals(scheduler.getTaskQueue().getTasks().length, 1);
 });

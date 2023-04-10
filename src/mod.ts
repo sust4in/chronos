@@ -1,5 +1,4 @@
-
-export { Task, createTask } from "./models/task.ts";
+export { createTask, Task } from "./models/task.ts";
 export { TaskQueue } from "./task_queue/task_queue.ts";
 export { Scheduler } from "./scheduler/scheduler.ts";
 export { CronScheduler } from "./scheduler/cron_scheduler.ts";
